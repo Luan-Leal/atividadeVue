@@ -14,8 +14,8 @@ export default {
 .paragraph {
   width: 45%;
   font-size: 1em;
-  margin-top: 5%;
+  margin-top: 3%;
   margin-bottom: 10%;
-  line-height: 1.25;
+  line-height: 1.25em;
 }
 </style>

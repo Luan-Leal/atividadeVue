@@ -20,7 +20,13 @@
         id="senha"
         placeholder="Senha"
       />
-      <i><img draggable="false" src="@/assets/password-icon.png" alt="" /></i>
+      <i
+        ><img
+          class="cadeado"
+          draggable="false"
+          src="@/assets/password-icon.png"
+          alt=""
+      /></i>
     </div>
   </div>
 </template>
@@ -73,7 +79,7 @@ input:focus {
 }
 
 .form-1 i {
-  margin-left: 3%;
+  margin-left: -13%;
 }
 
 .form-2 {
@@ -89,6 +95,7 @@ input:focus {
 }
 
 .form-2 i {
-  margin-left: 3%;
+  margin-top: 1%;
+  margin-left: -13%;
 }
 </style>

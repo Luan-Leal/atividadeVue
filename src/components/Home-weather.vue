@@ -43,8 +43,8 @@ export default {
 
 .container-img img {
   width: auto;
-  height: 20%;
-  margin-top: 20%;
+  height: 35px;
+  margin-top: 15%;
 }
 
 .container-temp {

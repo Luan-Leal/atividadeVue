@@ -1,8 +1,16 @@
 <template>
   <section>
-    <home-logo />
-    <home-date />
-    <home-weather />
+    <div class="header">
+      <home-logo />
+      <home-date />
+      <home-weather />
+    </div>
+    <div>
+      <home-main></home-main>
+    </div>
+    <div>
+      <home-footer></home-footer>
+    </div>
   </section>
 </template>
 
@@ -10,6 +18,8 @@
 import homeLogo from '@/components/Home-logo.vue';
 import homeDate from '@/components/Home-date.vue';
 import homeWeather from '@/components/Home-weather.vue';
+import homeMain from '@/components/Home-main.vue';
+import homeFooter from '@/components/Home-footer.vue';
 
 export default {
   name: 'home-page',
@@ -17,13 +27,17 @@ export default {
     homeLogo,
     homeDate,
     homeWeather,
+    homeMain,
+    homeFooter,
   },
 };
 </script>
 
 <style scoped>
-section {
+.header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 0 2%;
+  margin-top: 1%;
 }
 </style>

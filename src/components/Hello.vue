@@ -10,11 +10,13 @@ export default {
 
 <style scoped>
 .titulo {
+  display: flex;
+  align-items: center;
   font-size: 3.75em;
   font-weight: 400;
   color: white;
   width: 45%;
+  height: 8%;
   text-align: start;
-  line-height: 17px;
 }
 </style>

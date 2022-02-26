@@ -18,13 +18,9 @@ export default {
   color: white;
   border-style: none;
   cursor: pointer;
-  width: 90%;
+  width: 100%;
   height: 100%;
   margin-top: 5%;
-}
-
-.botao-login button:hover {
-  transform: scale(1.1);
 }
 
 .botao-login {
@@ -32,5 +28,7 @@ export default {
   color: #e0e0e0;
   width: 50%;
   height: 8%;
+  padding: 0 3%;
+  padding-bottom: 5%;
 }
 </style>

@@ -23,17 +23,16 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .clima {
   display: flex;
   flex-direction: column;
   margin-right: 1%;
-}
-
-.clima h5 {
-  display: flex;
-  justify-content: flex-end;
-  font-size: 0.6em;
+  h5 {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.6em;
+  }
 }
 
 .clima2 {
@@ -51,5 +50,10 @@ export default {
   display: flex;
   font-weight: bold;
   font-size: 2em;
+}
+@media (max-width: 1100px) {
+  .clima {
+    display: none;
+  }
 }
 </style>

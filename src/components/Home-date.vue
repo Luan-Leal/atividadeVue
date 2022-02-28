@@ -14,17 +14,37 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .hora {
   display: flex;
   flex-direction: column;
+  h1 {
+    font-size: 7em;
+    line-height: 0.8em;
+  }
+  p {
+    font-size: 0.8em;
+    align-self: center;
+  }
 }
-.hora h1 {
-  font-size: 7em;
-  line-height: 0.8em;
+@media (max-width: 5000px) {
+  .hora {
+    h1 {
+      font-size: 10em;
+    }
+  }
 }
-.hora p {
-  font-size: 0.8em;
-  align-self: center;
+
+@media (max-width: 1750px) {
+  .hora {
+    h1 {
+      font-size: 8em;
+    }
+  }
+}
+@media (max-width: 1100px) {
+  .hora {
+    display: none;
+  }
 }
 </style>

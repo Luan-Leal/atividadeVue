@@ -10,7 +10,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .login-erro {
   color: #e9b425;
   width: 50%;
@@ -18,10 +18,22 @@ export default {
   display: flex;
   justify-content: center;
   text-align: center;
+  span {
+    display: block;
+    padding: 0 15%;
+  }
 }
-
-.login-erro span {
-  display: block;
-  padding: 0 15%;
+@media (max-width: 1650px) {
+  .login-erro {
+    width: 50%;
+    border: 1px solid red;
+  }
+}
+@media (min-width: 1651px) and (max-width: 5000px) {
+  .login-erro {
+    font-size: 1.1em;
+    width: 43%;
+    border: 1px solid red;
+  }
 }
 </style>

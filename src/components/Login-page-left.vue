@@ -29,7 +29,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
 .login-left {
   display: flex;
   align-items: center;
@@ -39,5 +39,11 @@ export default {
   background: linear-gradient(180deg, #33383d 0%, #1c1d20 100%);
   justify-content: center;
   color: white;
+}
+
+@media (max-width: 1100px) {
+  .login-left {
+    width: 100%;
+  }
 }
 </style>

@@ -14,7 +14,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
 .login-right {
   display: flex;
   width: 50%;
@@ -23,5 +23,11 @@ export default {
   background-size: cover;
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 1100px) {
+  .login-right {
+    display: none;
+  }
 }
 </style>

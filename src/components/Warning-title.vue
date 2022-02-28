@@ -10,12 +10,26 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
 .paragraph {
   width: 45%;
   font-size: 1em;
   margin-top: 3%;
   margin-bottom: 10%;
   line-height: 1.25em;
+}
+
+@media (max-width: 1999px) {
+  .paragraph {
+    font-size: 1.25em;
+    margin-right: 7%;
+  }
+}
+
+@media (max-width: 5000px) {
+  .paragraph {
+    font-size: 1.25rem;
+    margin-right: 7%;
+  }
 }
 </style>

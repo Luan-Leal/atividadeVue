@@ -15,45 +15,79 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
 .login {
   display: flex;
   justify-self: center;
-  justify-content: start;
-  width: 20%;
+  justify-content: flex-end;
+  width: 15%;
 }
 
 .continuar {
   display: flex;
   justify-self: center;
   width: 100%;
-}
 
-.continuar button {
-  background: #ffffff;
-  color: #c13216;
-  border-style: none;
-  width: 100%;
-  text-transform: capitalize;
-  font-size: 0.875;
-  padding: 5%;
+  button {
+    background: #ffffff;
+    color: #c13216;
+    border-style: none;
+    width: 100%;
+    text-transform: capitalize;
+    font-size: 0.875;
+    padding: 5%;
+  }
 }
 
 .logout {
   display: flex;
   justify-content: center;
   width: 100%;
+  button {
+    background: linear-gradient(90.16deg, #33383d 0%, #1c1d20 100%);
+    color: #ffffff;
+    border-style: none;
+    width: 100%;
+  }
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
+@media (max-width: 5000px) {
+  .continuar {
+    width: 100%;
+    button {
+      padding: 20%;
+    }
+  }
 }
 
-.logout button {
-  background: linear-gradient(90.16deg, #33383d 0%, #1c1d20 100%);
-  color: #ffffff;
-  border-style: none;
-  width: 100%;
+@media (max-width: 1750px) {
+  .login {
+    width: 20%;
+  }
 }
 
-.logout a {
-  color: #ffffff;
-  text-decoration: none;
+@media (max-width: 1100px) {
+  .login {
+    display: flex;
+    justify-self: center;
+    justify-content: start;
+    width: 100%;
+  }
+
+  .continuar {
+    width: 80%;
+  }
+
+  .continuar button {
+    padding: 0 50%;
+  }
+
+  .logout {
+    width: 20%;
+    order: -1;
+  }
 }
 </style>

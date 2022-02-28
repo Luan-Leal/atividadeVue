@@ -15,15 +15,26 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
 .foto {
   width: 50%;
   display: flex;
   margin-left: -15%;
   z-index: 0;
+  position: absolute;
+  bottom: 0;
+  img {
+    min-width: 75%;
+  }
 }
 
-.foto img {
-  min-width: 100%;
+@media (max-width: 1100px) {
+  .foto {
+    position: absolute;
+    bottom: 0;
+    width: 120%;
+    height: calc(85%);
+    margin-left: -30%;
+  }
 }
 </style>

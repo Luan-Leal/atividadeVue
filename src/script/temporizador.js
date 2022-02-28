@@ -1,34 +1,30 @@
-export default function Timer ( ) {
+export default function Timer() {
+  function startTimer(duration, display) {
+    var timer = duration,
+      seconds;
+    var button = document.querySelector('.botao-login');
 
-    function startTimer (duration, display) {
-        var timer = duration, seconds;
-        var button  = document.querySelector(".botao-login")
+    button.addEventListener('click', () => {
+      setInterval(function () {
+        seconds = parseInt(timer % 600);
 
-        button.addEventListener("click", () => {
-  
-            setInterval(function(){
-                seconds = parseInt(timer % 600);
-                
-                seconds = seconds < 10 ? "0" + seconds : seconds;
+        seconds = seconds < 10 ? '0' + seconds : seconds;
 
-                display.textContent = seconds; 
-                
-                if (--timer < 0) {
-                    timer = window.location.href = "./index.html";
-                }
+        display.textContent = seconds;
 
-            }, 1000);
-        })
-    }
+        if (--timer < 0) {
+          timer = window.location.href = './index.html';
+        }
+      }, 1000);
+    });
+  }
 
-    window.onload = function () {
+  window.onload = function () {
+    var durationChoosed = 599;
 
-        var durationChoosed = 599
+    var duration = durationChoosed;
+    var display = document.querySelector('#timer');
 
-        var duration = durationChoosed;
-        var display = document.querySelector("#timer");
-
-
-        startTimer(duration, display);
-    }
+    startTimer(duration, display);
+  };
 }

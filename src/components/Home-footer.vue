@@ -20,7 +20,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .footer {
   display: flex;
   background: linear-gradient(90.16deg, #33383d 0%, #1c1d20 100%);
@@ -31,5 +31,17 @@ export default {
   position: absolute;
   z-index: 2;
   bottom: 0;
+}
+
+@media (max-width: 5000px) {
+  .footer {
+    height: 10vh;
+  }
+}
+
+@media (max-width: 1400px) {
+  .footer {
+    height: 12vh;
+  }
 }
 </style>

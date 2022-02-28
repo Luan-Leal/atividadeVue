@@ -8,7 +8,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .titulo {
   display: flex;
   align-items: center;
@@ -18,5 +18,25 @@ export default {
   width: 45%;
   height: 8%;
   text-align: start;
+}
+
+@media (max-width: 1100px) {
+  .titulo {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 1999px) {
+  .titulo {
+    font-size: 5em;
+    margin-right: 8%;
+  }
+}
+
+@media (max-width: 3000px) {
+  .titulo {
+    font-size: 6em;
+    margin-right: 10%;
+  }
 }
 </style>

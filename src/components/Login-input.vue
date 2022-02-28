@@ -37,7 +37,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 #form {
   width: 50%;
   color: #e0e0e0;
@@ -53,10 +53,9 @@ input {
   width: 100%;
   transition: none;
   color: #ffffff;
-}
-
-input::placeholder {
-  color: white;
+  &::placeholder {
+    color: white;
+  }
 }
 
 textarea:focus,
@@ -66,36 +65,31 @@ input:focus {
   border: none;
 }
 
-.form-1:focus-within {
-  border: 1px solid white;
-  border-radius: 50px;
-}
-
 .form-1 {
   margin-bottom: 5%;
   display: flex;
   flex-direction: row;
   align-items: center;
+  &:focus-within {
+    border: 1px solid white;
+    border-radius: 50px;
+  }
+  i {
+    margin-left: -13%;
+  }
 }
-
-.form-1 i {
-  margin-left: -13%;
-}
-
 .form-2 {
   margin-bottom: 5%;
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-
-.form-2:focus-within {
-  border: 1px solid white;
-  border-radius: 50px;
-}
-
-.form-2 i {
-  margin-top: 1%;
-  margin-left: -13%;
+  &:focus-within {
+    border: 1px solid white;
+    border-radius: 50px;
+  }
+  i {
+    margin-top: 1%;
+    margin-left: -13%;
+  }
 }
 </style>

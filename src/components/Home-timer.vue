@@ -14,33 +14,50 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .cronometro {
-  width: 30%;
+  width: 35%;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.cronometro p {
-  display: flex;
-  width: 25%;
-  justify-content: flex-end;
+  p {
+    display: flex;
+    width: 25%;
+    text-align: end;
+  }
 }
 
 .timer {
   padding-left: 5%;
   padding-right: 25%;
+  h1 {
+    font-size: 3.5em;
+    line-height: 0.8em;
+    padding-top: 1%;
+  }
+  h6 {
+    display: flex;
+    justify-content: center;
+  }
 }
-
-.timer h1 {
-  font-size: 3.5em;
-  line-height: 0.8em;
-  padding-top: 1%;
+@media (max-width: 5000px) {
+  .cronometro p {
+    width: 15%;
+  }
 }
-
-.timer h6 {
-  display: flex;
-  justify-content: center;
+@media (max-width: 1600px) {
+  .cronometro p {
+    width: 25%;
+  }
+}
+@media (max-width: 1300px) {
+  .cronometro p {
+    width: 30%;
+  }
+}
+@media (max-width: 1100px) {
+  .cronometro {
+    display: none;
+  }
 }
 </style>

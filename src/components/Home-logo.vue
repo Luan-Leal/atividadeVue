@@ -14,7 +14,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
 .logo img {
   height: 45px;
   width: auto;

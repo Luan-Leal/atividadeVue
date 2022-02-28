@@ -1,0 +1,16 @@
+.login-left {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  height: 100vh;
+  background: linear-gradient(180deg, #33383d 0%, #1c1d20 100%);
+  justify-content: center;
+  color: white;
+}
+
+@media (max-width: 1100px) {
+  .login-left {
+    width: 100%;
+  }
+}

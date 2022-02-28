@@ -1,0 +1,15 @@
+.login-right {
+  display: flex;
+  width: 50%;
+  height: 100vh;
+  background-image: url(@/assets/login-bg.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1100px) {
+  .login-right {
+    display: none;
+  }
+}

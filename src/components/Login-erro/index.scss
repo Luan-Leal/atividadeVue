@@ -1,0 +1,23 @@
+.login-erro {
+  color: #e9b425;
+  width: 50%;
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  span {
+    display: block;
+    padding: 0 15%;
+  }
+}
+@media (max-width: 1650px) {
+  .login-erro {
+    width: 50%;
+  }
+}
+@media (min-width: 1651px) and (max-width: 5000px) {
+  .login-erro {
+    font-size: 1.1em;
+    width: 43%;
+  }
+}
